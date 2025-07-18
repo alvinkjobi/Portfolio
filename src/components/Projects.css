@@ -17,7 +17,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  gap: 2rem;
+  padding: 0 3rem;
 }
 
 .projects-grid-wrapper {
@@ -28,6 +28,7 @@
   padding: 1rem 0;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  scroll-snap-type: x mandatory;
 }
 
 .projects-grid-wrapper::-webkit-scrollbar {
@@ -35,7 +36,7 @@
 }
 
 .project-card {
-  margin-bottom: 0.25rem; /* reduce this */
+  margin-bottom: 0.25rem;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
@@ -47,6 +48,9 @@
   justify-content: space-between;
   backdrop-filter: blur(10px);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-shrink: 0;
+  flex-grow: 0;
+  scroll-snap-align: start;
 }
 
 .project-header {
@@ -72,8 +76,6 @@
 }
 
 .project-description {
-  margin-top: 0rem; /* make sure it's not pushing it down */
-  line-height: 1.5;
   margin: 1rem 0;
   font-size: 1rem;
   color: #d9d9d9;
@@ -82,11 +84,10 @@
 
 .tech-stack {
   display: flex;
-  flex-wrap: wrap; /* ✅ allows badges to wrap */
+  flex-wrap: wrap;
   gap: 8px;
   margin-top: 1rem;
 }
-
 
 .tech-badge {
   background: rgba(114, 172, 244, 0.15);
@@ -97,7 +98,6 @@
   font-weight: 500;
   letter-spacing: 0.3px;
 }
-
 
 .project-card h3 {
   font-size: 1.5rem;
@@ -110,13 +110,6 @@
   line-height: 1.6;
 }
 
-.scroll-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  padding: 0 3rem; /* Add padding to avoid overlap */
-}
 .scroll-arrow {
   position: absolute;
   top: 50%;
@@ -143,6 +136,8 @@
   transform: translateY(-50%) scale(1.1);
   background: rgba(114, 172, 244, 0.2);
 }
+
+/* Responsive Design */
 @media (max-width: 768px) {
   .projects-section {
     padding: 4rem 1.5rem;
@@ -150,26 +145,17 @@
 
   .projects-grid-wrapper {
     gap: 1.2rem;
-    overflow-x: auto; /* Ensure horizontal scroll */
-    padding: 1rem 0;
   }
 
   .project-card {
     width: 85vw;
     max-width: 320px;
     padding: 1rem;
-    height: auto; /* ✅ Allow full height based on content */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-shrink: 0; /* ✅ Prevent cards from shrinking */
-  }
-
-  .project-description {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    max-height: none; /* ✅ Remove ellipsis cropping */
-    overflow: visible;
+    max-height: 420px;
+    height: auto;
+    flex-shrink: 0;
+    flex-grow: 0;
+    scroll-snap-align: start;
   }
 
   .projects-section h2 {
