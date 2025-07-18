@@ -4,7 +4,7 @@ import { useRef, useState, useEffect } from 'react'
 import * as THREE from 'three'
 
 function TextModel({ position = [0, 0.8, 0] }) {
-  const { scene } = useGLTF('/Text1.glb')
+  const { scene } = useGLTF('/Text2.glb')
   const ref = useRef()
   const [lastInteraction, setLastInteraction] = useState(Date.now())
   const [scale, setScale] = useState(0.01) // Default scale
