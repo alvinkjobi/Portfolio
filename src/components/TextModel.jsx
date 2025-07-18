@@ -20,9 +20,9 @@ function TextModel({ position = [0, 0.8, 0] }) {
     const updateScale = () => {
       const width = window.innerWidth
       if (width < 500) {
-        setScale(0.005) // Smaller for mobile
+        setScale(0.001) // Smaller for mobile
       } else if (width < 768) {
-        setScale(0.007)
+        setScale(0.005)
       } else {
         setScale(0.01) // Default desktop scale
       }
