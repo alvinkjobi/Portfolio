@@ -153,9 +153,22 @@
   }
 
   .project-card {
-    width: 85vw; /* ⬅️ Change from fixed px to responsive width */
-    max-width: 320px; /* ⬅️ Optional: prevent it from getting too big on tablets */
-    padding: 1.2rem;
+    width: 85vw;
+    max-width: 320px;
+    padding: 1rem;
+    height: 320px; /* ✅ Fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    max-height: 72px; /* ✅ Truncate long descriptions */
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .projects-section h2 {
