@@ -1,0 +1,174 @@
+.projects-section {
+  padding: 6rem 6rem;
+  background-color: #0d0d0d;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.projects-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
+  color: #ffffff;
+  animation: floatText 3s ease-in-out infinite;
+}
+
+.scroll-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 2rem;
+}
+
+.projects-grid-wrapper {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 3rem;
+  padding: 1rem 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.projects-grid-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.project-card {
+  margin-bottom: 0.25rem; /* reduce this */
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 1.8rem;
+  color: #f1f1f1;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-header h3 {
+  font-size: 1.5rem;
+  color: #72acf4;
+}
+
+.github-icon img {
+  width: 24px;
+  height: 24px;
+  filter: invert(80%);
+  transition: transform 0.2s ease;
+}
+
+.github-icon:hover img {
+  transform: scale(1.2);
+}
+
+.project-description {
+  margin-top: 0rem; /* make sure it's not pushing it down */
+  line-height: 1.5;
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #d9d9d9;
+  line-height: 1.6;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap; /* ✅ allows badges to wrap */
+  gap: 8px;
+  margin-top: 1rem;
+}
+
+
+.tech-badge {
+  background: rgba(114, 172, 244, 0.15);
+  color: #72acf4;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #72acf4;
+}
+
+.project-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.scroll-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 3rem; /* Add padding to avoid overlap */
+}
+.scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  cursor: pointer;
+  color: #ffffffcc;
+  padding: 0.5rem;
+  z-index: 2;
+  border-radius: 50%;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.scroll-arrow.left {
+  left: 0.5rem;
+}
+
+.scroll-arrow.right {
+  right: 0.5rem;
+}
+
+.scroll-arrow:hover {
+  transform: translateY(-50%) scale(1.1);
+  background: rgba(114, 172, 244, 0.2);
+}
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .projects-grid-wrapper {
+    gap: 1.2rem;
+  }
+
+  .project-card {
+    width: 260px;
+    padding: 1.2rem;
+  }
+
+  .projects-section h2 {
+    font-size: 2rem;
+  }
+
+  .scroll-arrow {
+  padding: 0.3rem;
+}
+
+.scroll-arrow.left {
+  left: 0.2rem;
+}
+.scroll-arrow.right {
+  right: 0.2rem;
+}
+}
