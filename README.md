@@ -1,4 +1,4 @@
-# 🧑‍💻 Alvin K Jobi – Portfolio Website
+#  Alvin K Jobi – Portfolio Website
 
 Welcome to my personal **portfolio website** showcasing my projects, skills, and background as an Electronics & Communication Engineering student and software developer. The site is built using modern frontend technologies with performance, clarity, and creativity in mind.
 
