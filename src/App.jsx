@@ -54,7 +54,7 @@ export default function App() {
         </Canvas>
 
         <div className="below-model-text">
-          <p>Frontend Developer • BTech ECE Graduate</p>
+          <p>System Engineer at Infosys • Frontend Developer • BTech ECE Graduate</p>
           <span className="hero-subtext">
             I craft elegant, interactive experiences at the intersection of design and code.
           </span>
