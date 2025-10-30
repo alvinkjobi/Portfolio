@@ -23,13 +23,13 @@ export default function About() {
           viewport={{ once: true }}
         >
           <p>
-  **I am** <strong>Alvin K Jobi</strong>, a B.Tech Electronics and Communication Engineering graduate (2025 pass out). **I am** passionate about building digital experiences that are both visually appealing and technically sound.
+  I am <strong>Alvin K Jobi</strong>, a B.Tech Electronics and Communication Engineering graduate (2025 pass out). I am passionate about building digital experiences that are both visually appealing and technically sound.
   <br /><br />
-  **I am** currently a **Systems Engineer Trainee at Infosys**.
+  I am currently a <strong>Systems Engineer Trainee at Infosys</strong>, where I apply my technical skills to solve problems on real-world projects.
   <br /><br />
-  As a tech enthusiast and freelance **Frontend Developer**, **I** specialize in crafting modern user interfaces using **React**. **I** also develop full-stack applications with the **MERN stack** (MongoDB, Express, React, Node.js).
+  As a tech enthusiast and freelance <strong>Frontend Developer</strong>, I specialize in crafting modern user interfaces using <strong>React</strong>. I also develop full-stack applications with the <strong>MERN stack</strong> (MongoDB, Express, React, Node.js).
   <br /><br />
-  **My** focus is on creativity, continuous learning, and pushing the boundaries of web development.
+  My focus is on creativity, continuous learning, and pushing the boundaries of web development.
 </p>
 
         </motion.div>
